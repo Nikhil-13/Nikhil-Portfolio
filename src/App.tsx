@@ -5,8 +5,12 @@ import Sidebar from './pages/Sidebar'
 function App() {
 	return (
 		<div className='container'>
-			<Sidebar />
-			<Main />
+			<div>
+				<Sidebar />
+			</div>
+			<div>
+				<Main />
+			</div>
 		</div>
 	)
 }
