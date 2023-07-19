@@ -1,19 +1,28 @@
+import { Link } from 'react-router-dom'
 function Main() {
 	return (
 		<main>
 			<section className='hero'>
-				<h1>Hey</h1>
-				<h1>I'm Nikhil</h1>
+				<div>
+					<h1>Hey</h1>
+					<h1>I'm Nikhil</h1>
+				</div>
 				<div className='btns'>
-					<button>
-						<span>About</span>
-					</button>
-					<button>
-						<span>Work</span>
-					</button>
-					<button>
-						<span>Contact</span>
-					</button>
+					<Link to='/about'>
+						<button>
+							<span>About</span>
+						</button>
+					</Link>
+					<Link to='/work'>
+						<button>
+							<span>Work</span>
+						</button>
+					</Link>
+					<Link to='/contact'>
+						<button>
+							<span>Contact</span>
+						</button>
+					</Link>
 				</div>
 			</section>
 		</main>

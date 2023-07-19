@@ -18,6 +18,18 @@
   --accent: #3e45c1;
 }
 
+@media(prefers-color-scheme:light)
+{
+  :root
+  {
+    --text: #151415;
+    --background: #fdfcfc;
+    --primary: #45c13e;
+    --secondary: #e2e4e3;
+    --accent: #3e45c1;
+  }
+}
+
 html
 {
   color-scheme: light dark;
@@ -43,7 +55,7 @@ video
 
 h1
 {
-  font-size: clamp();
+  font-size: clamp(2rem, 3rem, 4rem);
   text-wrap: balance;
 }
 
@@ -52,9 +64,10 @@ a:active,
 a:visited
 {
   all: unset;
+  scale: 1;
 }
 
-a:hover
+.social-links a:hover
 {
   /* --elem-shadow-color: #ffffff6c; */
   filter: drop-shadow(0 0 10px var(--elem-shadow-color));
@@ -62,22 +75,22 @@ a:hover
   transition: all .3s ease;
 }
 
-a:nth-child(1):hover
+.social-links a:nth-child(1):hover
 {
-  --elem-bg-color: #0da817;
-  --elem-shadow-color: #09ff00;
+  --elem-bg-color: #13ca25fe;
+  --elem-shadow-color: #3af38abf;
 }
 
-a:nth-child(2):hover
+.social-links a:nth-child(2):hover
 {
-  --elem-bg-color: #df5f14;
-  --elem-shadow-color: #e07e22;
+  --elem-bg-color: #df5f14fe;
+  --elem-shadow-color: #e07e22bf;
 }
 
-a:nth-child(3):hover
+.social-links a:nth-child(3):hover
 {
-  --elem-bg-color: #0051ff;
-  --elem-shadow-color: #061db3;
+  --elem-bg-color: #0051fffe;
+  --elem-shadow-color: #547bf9bf;
 }
 
 .container
@@ -112,17 +125,27 @@ aside>*
 }
 
 main
-{}
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+section
+{
+  min-height: 100dvh;
+  margin-inline: auto;
+}
 
 .hero
 {
-  margin: auto;
-  min-height: 100%;
-  padding: 20px 100px;
+  width: fit-content;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
 }
 
 .btns
@@ -198,17 +221,7 @@ button span
   font-weight: 600;
 }
 
-@media(prefers-color-scheme:light)
-{
-  :root
-  {
-    --text: #151415;
-    --background: #fdfcfc;
-    --primary: #45c13e;
-    --secondary: #e2e4e3;
-    --accent: #3e45c1;
-  }
-}
+
 
 @media(prefers-reduced-motion:no-preference)
 {
@@ -230,20 +243,12 @@ button span
 }
 
 
-@media (width<640px)
+@media (width<=426px)
 {
-  aside
+  .container
   {
-    width: 100%;
-    height: 70px;
-    padding: 20px;
-    position: fixed;
-    flex-direction: row;
-  }
-
-  .social-links
-  {
-    flex-direction: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
   }
 }
 
