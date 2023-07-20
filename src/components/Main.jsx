@@ -4,8 +4,8 @@ function Main() {
 		<main>
 			<section className='hero' id='hero'>
 				<div>
-					<h1>Hey</h1>
-					<h1>I'm Nikhil</h1>
+					<h2>Hey</h2>
+					<h1>I&apos;m Nikhil</h1>
 				</div>
 				<div className='btns'>
 					<Link to='/about'>

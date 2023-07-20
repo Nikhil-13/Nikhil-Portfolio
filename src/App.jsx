@@ -1,9 +1,11 @@
 import './App.css'
+import './Form.css'
 import Sidebar from './components/Sidebar'
 import Main from './components/Main'
 import About from './pages/About'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
+
 import { Route, Routes } from 'react-router-dom'
 
 function App() {

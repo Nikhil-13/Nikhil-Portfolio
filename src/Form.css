@@ -1,0 +1,45 @@
+form
+{
+  width: 100%;
+  max-width: 50vw;
+  /* background-color: blueviolet; */
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+
+input[type=text]
+{
+  background: transparent;
+  padding: 1rem 0;
+  border: 0;
+  border-bottom: 2px solid var(--primary);
+  outline: 0;
+  transition: all .3s ease;
+  width: 100%;
+}
+
+input[type=text]:focus,
+textarea:focus
+{
+  background-color: var(--secondary);
+}
+
+form textarea
+{
+  background: transparent;
+  border: 1px solid var(--secondary);
+  resize: none;
+  height: 100px;
+  outline: 0;
+  width: 100%;
+}
+
+input[type=submit]
+{
+  padding: .5rem 1rem;
+  background-color: var(--primary);
+  outline: 0;
+  border: 0;
+  max-width: 100px;
+}
