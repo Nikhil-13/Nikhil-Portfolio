@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 function Main() {
 	return (
 		<main>
-			<section className='hero'>
+			<section className='hero' id='hero'>
 				<div>
 					<h1>Hey</h1>
 					<h1>I'm Nikhil</h1>

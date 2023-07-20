@@ -1,6 +1,6 @@
 function About() {
 	return (
-		<div id='about'>
+		<section id='about'>
 			<h1>About</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam amet
@@ -14,7 +14,19 @@ function About() {
 				officiis ipsam quae, odio possimus consectetur repudiandae voluptas magnam? Culpa
 				exercitationem cupiditate at repellendus delectus quae.
 			</p>
-		</div>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quos,
+				corporis quae repellendus eligendi quo animi repudiandae quasi doloribus veritatis
+				provident dolor dolorem, enim sunt magnam quidem maiores? Quibusdam, laudantium
+				voluptatem placeat eius praesentium voluptatibus impedit voluptates eligendi ut
+				labore consequatur consectetur illum quis architecto nihil provident, vitae cum
+				assumenda quaerat sint optio! Optio inventore neque ad iste in fugit mollitia
+				nobis fugiat vero nam. Tenetur hic placeat, ullam veniam impedit deserunt sed quam
+				saepe rem velit architecto sint a, quasi minus reiciendis alias soluta, eveniet
+				distinctio aperiam numquam. Pariatur ipsam illum a officia illo earum consectetur
+				labore quo numquam.
+			</p>
+		</section>
 	)
 }
 

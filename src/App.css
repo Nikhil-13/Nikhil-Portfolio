@@ -125,15 +125,15 @@ aside>*
 }
 
 main
-{
-  width: 100%;
-  height: 100%;
-}
+{}
 
 section
 {
-  min-height: 100dvh;
+  min-height: 100vh;
+  width: 100%;
   margin-inline: auto;
+  /* background-color: rebeccapurple; */
+  padding: 2rem;
 }
 
 .hero
@@ -283,5 +283,5 @@ button span
 
 ::-webkit-scrollbar
 {
-  display: none;
+  /* display: none; */
 }
