@@ -220,7 +220,41 @@ button span
   font-weight: 600;
 }
 
+.card-wrapper
+{
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
 
+.work-card
+{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: min(50ch, 500px, 56vw);
+  background: var(--secondary);
+  margin: 1rem;
+  padding: 1rem;
+  z-index: -2;
+}
+
+.work-card:nth-child(1)
+{
+  box-shadow: 0px 2px 1px limegreen;
+}
+
+.tech-stack
+{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  word-break: no-break;
+}
 
 @media(prefers-reduced-motion:no-preference)
 {
@@ -260,6 +294,11 @@ button span
     order: 1;
   }
 
+  section
+  {
+    padding: 1rem;
+  }
+
   aside
   {
     height: 70px;
@@ -279,9 +318,14 @@ button span
     padding: 5px;
     font-size: 1.5rem;
   }
+
+  .work-card
+  {
+    width: 100%;
+  }
 }
 
 ::-webkit-scrollbar
 {
-  /* display: none; */
+  display: none;
 }
