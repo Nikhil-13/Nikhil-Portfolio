@@ -71,6 +71,17 @@ a:visited
   scale: 1;
 }
 
+.logo-header
+{
+  filter: drop-shadow(0px 0px 5px var(--accent));
+  transition: all .2s ease-in;
+}
+
+.logo-header:hover
+{
+  color: #3e45c1;
+}
+
 .social-links a:hover
 {
   /* --elem-shadow-color: #ffffff6c; */
@@ -193,6 +204,13 @@ button:after
   height: calc(100% + 6px);
   top: -3px;
   left: 8px;
+}
+
+button:hover
+{
+
+  border-color: var(--accent);
+  filter: hue-rotate(15deg);
 }
 
 button:active

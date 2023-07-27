@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Sidebar() {
 	return (
 		<aside>
-			<Link to='/'>
-				<div className='logo-header'>logo</div>
-			</Link>
+			<div className='logo-header'>
+				<Link to='/'>logo</Link>
+			</div>
 			<div className='social-links'>
 				<a href='https://github.com/Nikhil-13' target='__blank'>
 					<Github />
