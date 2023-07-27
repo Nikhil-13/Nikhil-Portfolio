@@ -5,9 +5,7 @@
   justify-content: center;
   margin: 1rem;
   margin-inline: auto;
-  /* padding: 1rem; */
   width: 60dvw;
-  /* border: 1px solid hotpink; */
 }
 
 form
@@ -26,10 +24,9 @@ form>*
 
 input[type=text]
 {
-  padding: 1rem 0;
+  padding: 1rem .5rem;
   border: 0;
   outline: 0;
-  padding-inline: .5rem;
   border-bottom: 3px solid transparent;
   width: 100%;
   background-color: var(--secondary);
@@ -61,4 +58,9 @@ input[type=submit]
   outline: 0;
   border: 0;
   max-width: 100px;
+}
+
+input[type=submit]:disabled
+{
+  filter: grayscale();
 }

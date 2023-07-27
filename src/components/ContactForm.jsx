@@ -8,8 +8,11 @@ export default function App() {
 		handleSubmit,
 		formState: { errors },
 	} = useForm()
-	const onSubmit = (data) => setFormData(data)
-	console.log(errors)
+	const onSubmit = (data) => {
+		setFormData(data), console.log(data)
+	}
+
+	// console.log(errors)
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
@@ -22,12 +25,13 @@ export default function App() {
 				type='text'
 				placeholder='Email'
 				{...register('Email', { required: true, pattern: /^\S+@\S+$/i })}
-			/>
-			<textarea
-				placeholder='Write your views here...'
-				{...register('Subject', { required: true, max: 200, min: 50, maxLength: 300 })}
+				style={errors.Email && { borderColor: 'red' }}
 			/>
 
+			<textarea
+				placeholder='Write your message here...'
+				{...register('Subject', { required: true, max: 200, min: 50, maxLength: 300 })}
+			/>
 			<input type='submit' />
 		</form>
 	)
