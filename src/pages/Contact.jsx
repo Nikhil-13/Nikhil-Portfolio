@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form'
+import { motion } from 'framer-motion'
 
 function Contact() {
 	console.count()
@@ -12,7 +13,15 @@ function Contact() {
 	}
 
 	return (
-		<section id='contact'>
+		<motion.section
+			id='contact'
+			initial={{ scale: 0, rotate: 180 }}
+			animate={{ rotate: 0, scale: 1 }}
+			transition={{
+				type: 'spring',
+				stiffness: 260,
+				damping: 20,
+			}}>
 			<h1>Contact</h1>
 			<div className='form-container'>
 				<form onSubmit={handleSubmit(onSubmit)}>
@@ -50,7 +59,7 @@ function Contact() {
 					/>
 				</form>
 			</div>
-		</section>
+		</motion.section>
 	)
 }
 

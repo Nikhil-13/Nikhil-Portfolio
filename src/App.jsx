@@ -5,7 +5,7 @@ import Main from './components/Main'
 import About from './pages/About'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
-
+import { motion } from 'framer-motion'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {

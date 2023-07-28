@@ -1,23 +1,40 @@
 import { Github, Linkedin, StackOverflow } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import AnimationContext from '../context/AnimationContext'
 
 function Sidebar() {
+	const { socialItemVariants, socialLinksContainer } = useContext(AnimationContext)
 	return (
 		<aside>
 			<div className='logo-header'>
 				<Link to='/'>logo</Link>
 			</div>
-			<div className='social-links'>
-				<a href='https://github.com/Nikhil-13' target='__blank'>
+			<motion.div
+				className='social-links'
+				variants={socialLinksContainer}
+				initial='hidden'
+				animate='visible'>
+				<motion.a
+					href='https://github.com/Nikhil-13'
+					target='__blank'
+					variants={socialItemVariants}>
 					<Github />
-				</a>
-				<a href='https://stackoverflow.com/users/13827711/nikhil' target='__blank'>
+				</motion.a>
+				<motion.a
+					href='https://stackoverflow.com/users/13827711/nikhil'
+					target='__blank'
+					variants={socialItemVariants}>
 					<StackOverflow />
-				</a>
-				<a href='https://www.linkedin.com/in/nikhil-kumar-51294b11b/' target='__blank'>
+				</motion.a>
+				<motion.a
+					href='https://www.linkedin.com/in/nikhil-kumar-51294b11b/'
+					target='__blank'
+					variants={socialItemVariants}>
 					<Linkedin />
-				</a>
-			</div>
+				</motion.a>
+			</motion.div>
 		</aside>
 	)
 }
