@@ -1,22 +1,22 @@
 export const work = [
 	{
 		id: 1,
-		company: 'Infosys',
+		company: 'ABC',
+		companyUrl: 'http://google.com',
 		location: 'Panchkula,India',
 		role: 'Fullstack Dev',
 		years: '2011-2012',
-		description:
-			'fgjksdfjklgbsdfklgbdfjkgdf  dfjklgbkjdfgdsf g;dsfgjdfsgsdfjgbsdfg jdsfgdfgbdjfkgbdfg',
+		description: 'The quick brown fox jumps over the lazy dog.',
 		stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'GraphQL'],
 	},
 	{
 		id: 2,
-		company: 'Infosys',
+		company: 'XYZ',
+		companyUrl: 'http://google.com',
 		location: 'Panchkula,India',
 		role: 'Fullstack Dev',
 		years: '2011-2012',
-		description:
-			'fgjksdfjklgbsdfklgbdfjkgdf  dfjklgbkjdfgdsf g;dsfgjdfsgsdfjgbsdfg jdsfgdfgbdjfkgbdfg',
+		description: 'The quick brown fox jumps over the lazy dog.',
 		stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'GraphQL'],
 	},
 ]

@@ -2,7 +2,7 @@ import { createContext } from 'react'
 const AnimationContext = createContext()
 
 export const AnimationContextProvider = ({ children }) => {
-	const socialLinksContainer = {
+	const stackContainer = {
 		hidden: {
 			opacity: 0,
 			y: 100,
@@ -17,7 +17,7 @@ export const AnimationContextProvider = ({ children }) => {
 		},
 	}
 
-	const socialItemVariants = {
+	const stackItem = {
 		hidden: {
 			opacity: 0,
 			x: -20,
@@ -27,8 +27,29 @@ export const AnimationContextProvider = ({ children }) => {
 			x: 0,
 		},
 	}
+
+	const cardContainer = {
+		hidden: { opacity: 1, scale: 0 },
+		visible: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				delayChildren: 0.3,
+				staggerChildren: 0.2,
+			},
+		},
+	}
+
+	const cardItem = {
+		hidden: { y: 20, opacity: 0 },
+		visible: {
+			y: 0,
+			opacity: 1,
+		},
+	}
 	return (
-		<AnimationContext.Provider value={{ socialItemVariants, socialLinksContainer }}>
+		<AnimationContext.Provider
+			value={{ stackItem, stackContainer, cardContainer, cardItem }}>
 			{children}
 		</AnimationContext.Provider>
 	)

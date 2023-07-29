@@ -198,8 +198,8 @@ button:after
 button:hover
 {
 
-  border-color: var(--accent);
-  filter: hue-rotate(15deg);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 button:active
@@ -266,6 +266,33 @@ button span
   word-break: no-break;
 }
 
+.about-content
+{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem .5rem;
+  /* border: 1px solid red; */
+  margin-inline: auto;
+  margin: 2rem auto;
+  width: 80%;
+  min-height: 60dvh;
+}
+
+.about-content>*
+{
+  width: 50%;
+  text-align: center;
+  line-height: 1.7;
+  padding: .5rem;
+  text-wrap: balance;
+}
+
+.avatar img
+{
+  border-radius: 50%;
+}
+
 
 @media (prefers-reduced-motion: no-preference)
 {
@@ -329,12 +356,29 @@ button span
     font-size: 1.5rem;
   }
 
-  .work-card
+
+  .about-content
+  {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-content>*
   {
     width: 100%;
   }
 
+  .avatar img
+  {
+    min-height: 150px;
+    width: auto;
+  }
 
+  .work-card
+  {
+    width: 100%;
+  }
 
   .form-container
   {

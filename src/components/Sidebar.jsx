@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import AnimationContext from '../context/AnimationContext'
 
 function Sidebar() {
-	const { socialItemVariants, socialLinksContainer } = useContext(AnimationContext)
+	const { stackItem, stackContainer } = useContext(AnimationContext)
 	return (
 		<aside>
 			<div className='logo-header'>
@@ -13,25 +13,25 @@ function Sidebar() {
 			</div>
 			<motion.div
 				className='social-links'
-				variants={socialLinksContainer}
+				variants={stackContainer}
 				initial='hidden'
 				animate='visible'>
 				<motion.a
 					href='https://github.com/Nikhil-13'
 					target='__blank'
-					variants={socialItemVariants}>
+					variants={stackItem}>
 					<Github />
 				</motion.a>
 				<motion.a
 					href='https://stackoverflow.com/users/13827711/nikhil'
 					target='__blank'
-					variants={socialItemVariants}>
+					variants={stackItem}>
 					<StackOverflow />
 				</motion.a>
 				<motion.a
 					href='https://www.linkedin.com/in/nikhil-kumar-51294b11b/'
 					target='__blank'
-					variants={socialItemVariants}>
+					variants={stackItem}>
 					<Linkedin />
 				</motion.a>
 			</motion.div>

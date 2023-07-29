@@ -1,5 +1,3 @@
-import { work } from '../../data/data'
-
 /* eslint-disable react/prop-types */
 function Card({ workItem }) {
 	return (
@@ -11,7 +9,7 @@ function Card({ workItem }) {
 					alignItems: 'baseline',
 				}}>
 				<h3 className='company-name'>
-					<a href='' target='_blank' rel='noopener noreferrer'>
+					<a href={workItem.companyUrl} target='_blank' rel='noopener noreferrer'>
 						{workItem.company}
 					</a>
 				</h3>
@@ -37,7 +35,7 @@ function Card({ workItem }) {
 			<div className='tech-stack'>
 				{workItem.stack.map((stackItem) => (
 					// eslint-disable-next-line react/jsx-key
-					<span className='tech-stack-item'>{stackItem}</span>
+					<span className='tech-stack-item'>{stackItem} | </span>
 				))}
 			</div>
 		</div>
