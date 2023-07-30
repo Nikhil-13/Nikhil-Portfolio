@@ -2,7 +2,6 @@ import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 
 function Contact() {
-	console.count()
 	const {
 		register,
 		handleSubmit,
@@ -13,15 +12,18 @@ function Contact() {
 	}
 
 	return (
-		<motion.section
-			id='contact'
-			initial={{ opacity: 0, y: 10, x: -10 }}
-			animate={{ opacity: 1, y: 0, x: 0 }}
-			transition={{
-				duration: 0.5,
-				delay: 0.2,
-			}}>
-			<h1>Contact</h1>
+		<section id='contact'>
+			<div>
+				<motion.div
+					initial={{ opacity: 0, y: 10, x: -10 }}
+					animate={{ opacity: 1, y: 0, x: 0 }}
+					transition={{
+						duration: 0.5,
+						delay: 0.2,
+					}}>
+					<h1>Contact</h1>
+				</motion.div>
+			</div>
 			<div className='form-container'>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<input
@@ -58,7 +60,7 @@ function Contact() {
 					/>
 				</form>
 			</div>
-		</motion.section>
+		</section>
 	)
 }
 

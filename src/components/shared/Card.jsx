@@ -1,7 +1,16 @@
-/* eslint-disable react/prop-types */
+import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import AnimationContext from '../../context/AnimationContext' /* eslint-disable react/prop-types */
 function Card({ workItem }) {
+	const { cardItem } = useContext(AnimationContext)
+
 	return (
-		<div className='work-card'>
+		<motion.div
+			className='work-card'
+			variants={cardItem}
+			initial={cardItem.hidden}
+			animate={cardItem.visible}
+			transition={cardItem.visible.transition}>
 			<div
 				style={{
 					display: 'flex',
@@ -38,7 +47,7 @@ function Card({ workItem }) {
 					<span className='tech-stack-item'>{stackItem} | </span>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

@@ -37,7 +37,7 @@ html
 
 body
 {
-  font-family: system-ui, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
   background-color: var(--background);
@@ -57,6 +57,7 @@ h1
   font-size: clamp(2rem, 3rem, 4rem);
   text-wrap: balance;
 }
+
 
 h2
 {
@@ -131,6 +132,7 @@ aside>*
 section
 {
   min-height: 100vh;
+  display: block;
   width: 100%;
   margin-inline: auto;
   /* background-color: rebeccapurple; */
@@ -266,11 +268,16 @@ button span
   word-break: no-break;
 }
 
+.tech-stack::before
+{
+  content: '|';
+}
+
 .about-content
 {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  /* gap: 2rem; */
   padding: 1rem .5rem;
   /* border: 1px solid red; */
   margin-inline: auto;
@@ -288,9 +295,20 @@ button span
   text-wrap: balance;
 }
 
+.avatar
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
 .avatar img
 {
   border-radius: 50%;
+  max-height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 

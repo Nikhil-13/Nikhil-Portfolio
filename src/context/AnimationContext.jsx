@@ -28,6 +28,20 @@ export const AnimationContextProvider = ({ children }) => {
 		},
 	}
 
+	const headingAnimation = {
+		initial: {
+			opacity: 0,
+		},
+		animate: {
+			opacity: 1,
+		},
+		transition: {
+			duration: 1,
+			delay: 0.2,
+			ease: [0, 0.71, 0.2, 1.01],
+		},
+	}
+
 	const cardContainer = {
 		hidden: { opacity: 1, scale: 0 },
 		visible: {
@@ -49,7 +63,7 @@ export const AnimationContextProvider = ({ children }) => {
 	}
 	return (
 		<AnimationContext.Provider
-			value={{ stackItem, stackContainer, cardContainer, cardItem }}>
+			value={{ stackItem, stackContainer, cardContainer, cardItem, headingAnimation }}>
 			{children}
 		</AnimationContext.Provider>
 	)

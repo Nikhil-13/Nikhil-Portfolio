@@ -1,29 +1,48 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import AnimationContext from '../context/AnimationContext'
+
 function Main() {
+	const { stackItem, stackContainer } = useContext(AnimationContext)
+
 	return (
 		<main>
 			<section className='hero' id='hero'>
 				<div>
 					<h2>Hey</h2>
-					<h1>I&apos;m Nikhil</h1>
+					<h1 data-name='Nikhil'>I&apos;m Nikhil</h1>
 				</div>
-				<div className='btns'>
+				<motion.div
+					className='btns'
+					variants={stackContainer}
+					initial={stackContainer.hidden}
+					animate={stackContainer.visible}>
 					<Link to='/about'>
-						<button>
+						<motion.button
+							variants={stackItem}
+							initial={stackItem.hidden}
+							animate={stackItem.visible}>
 							<span>About</span>
-						</button>
+						</motion.button>
 					</Link>
 					<Link to='/work'>
-						<button>
+						<motion.button
+							variants={stackItem}
+							initial={stackItem.hidden}
+							animate={stackItem.visible}>
 							<span>Work</span>
-						</button>
+						</motion.button>
 					</Link>
 					<Link to='/contact'>
-						<button>
+						<motion.button
+							variants={stackItem}
+							initial={stackItem.hidden}
+							animate={stackItem.visible}>
 							<span>Contact</span>
-						</button>
+						</motion.button>
 					</Link>
-				</div>
+				</motion.div>
 			</section>
 		</main>
 	)

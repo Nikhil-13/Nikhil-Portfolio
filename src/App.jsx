@@ -1,12 +1,11 @@
 import './App.css'
 import './Form.css'
+import { Route, Routes } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
 import Main from './components/Main'
 import About from './pages/About'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
-import { motion } from 'framer-motion'
-import { Route, Routes } from 'react-router-dom'
 
 function App() {
 	return (
@@ -16,10 +15,10 @@ function App() {
 			</div>
 			<div>
 				<Routes>
-					<Route exact path='/' element={<Main />}></Route>
-					<Route path='/about' element={<About />}></Route>
-					<Route path='/work' element={<Work />}></Route>
-					<Route path='/contact' element={<Contact />}></Route>
+					<Route exact path='/' element={<Main />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/work' element={<Work />} />
+					<Route path='/contact' element={<Contact />} />
 				</Routes>
 			</div>
 		</div>

@@ -1,18 +1,19 @@
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import AnimationContext from '../context/AnimationContext'
 function About() {
 	const date = new Date()
+	const { headingAnimation } = useContext(AnimationContext)
+
 	return (
 		<section id='about'>
-			<motion.h1
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{
-					duration: 0.7,
-					delay: 0.2,
-					ease: [0, 0.71, 0.2, 1.01],
-				}}>
-				About
-			</motion.h1>
+			<motion.div
+				animate={headingAnimation.animate}
+				initial={headingAnimation.initial}
+				variants={headingAnimation}
+				transition={headingAnimation.transition}>
+				<h1>About</h1>
+			</motion.div>
 			<motion.div
 				className='about-content'
 				initial={{ opacity: 0, y: 200, x: 50 }}
@@ -24,12 +25,14 @@ function About() {
 				}}>
 				<div>
 					<h3>Hi there!</h3>
-					I'm Nikhil a {date.getFullYear() - (date.getMonth() < 11 ? 1998 : 1997)} year
-					old Front-End Web Developer based in Chandigarh, India. I always had a keen for
-					building up things up from scratch, that is why i chose this career.
+					I&apos;m Nikhil, a {date.getFullYear() -
+						(date.getMonth() < 11 ? 1998 : 1997)}{' '}
+					year old Front-End Web Developer based in Chandigarh, India. I have always had a
+					keen interest in building up things up from scratch, which is why i chose this
+					career, it gives me a sense of fulfillment.
 				</div>
 				<div className='avatar'>
-					<img src='.\public\miless.jpg' alt='ksdjfdf' />
+					<img src='https://placehold.co/400' alt='ksdjfdf' />
 				</div>
 			</motion.div>
 		</section>

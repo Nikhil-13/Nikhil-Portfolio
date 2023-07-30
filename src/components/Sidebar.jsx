@@ -9,7 +9,7 @@ function Sidebar() {
 	return (
 		<aside>
 			<div className='logo-header'>
-				<Link to='/'>logo</Link>
+				<Link to='/'>N</Link>
 			</div>
 			<motion.div
 				className='social-links'
