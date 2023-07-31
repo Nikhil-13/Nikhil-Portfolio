@@ -5,7 +5,7 @@ import AnimationContext from '../context/AnimationContext'
 import Card from '../components/shared/Card'
 // import { useEffect } from 'react'
 function Work() {
-	const { cardContainer, headingAnimation } = useContext(AnimationContext)
+	const { headingAnimation, container } = useContext(AnimationContext)
 
 	return (
 		<section id='work'>
@@ -18,10 +18,9 @@ function Work() {
 			</motion.div>
 			<motion.div
 				className='card-wrapper'
-				variants={cardContainer}
-				initial={cardContainer.hidden}
-				animate={cardContainer.visible}
-				transition={cardContainer.visible.transition}>
+				variants={container}
+				initial='hidden'
+				animate='visible'>
 				{work.map((workItem) => (
 					<Card key={workItem.id} workItem={workItem} />
 				))}

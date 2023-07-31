@@ -1,7 +1,11 @@
 import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import AnimationContext from '../context/AnimationContext'
 
 function Contact() {
+	const { headingAnimation, container, item } = useContext(AnimationContext)
+
 	const {
 		register,
 		handleSubmit,
@@ -15,17 +19,19 @@ function Contact() {
 		<section id='contact'>
 			<div>
 				<motion.div
-					initial={{ opacity: 0, y: 10, x: -10 }}
-					animate={{ opacity: 1, y: 0, x: 0 }}
-					transition={{
-						duration: 0.5,
-						delay: 0.2,
-					}}>
+					animate={headingAnimation.animate}
+					initial={headingAnimation.initial}
+					variants={headingAnimation}
+					transition={headingAnimation.transition}>
 					<h1>Contact</h1>
 				</motion.div>
 			</div>
-			<div className='form-container'>
-				<form onSubmit={handleSubmit(onSubmit)}>
+			<motion.div
+				className='form-container'
+				variants={container}
+				initial='hidden'
+				animate='visible'>
+				<motion.form onSubmit={handleSubmit(onSubmit)} variants={item}>
 					<input
 						type='text'
 						placeholder='Name'
@@ -58,8 +64,8 @@ function Contact() {
 						type='submit'
 						disabled={Object.keys(errors).length === 0 ? false : true}
 					/>
-				</form>
-			</div>
+				</motion.form>
+			</motion.div>
 		</section>
 	)
 }

@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import AnimationContext from '../context/AnimationContext'
 
 function Main() {
-	const { stackItem, stackContainer } = useContext(AnimationContext)
+	const { container, item } = useContext(AnimationContext)
 
 	return (
 		<main>
@@ -13,32 +13,26 @@ function Main() {
 					<h2>Hey</h2>
 					<h1 data-name='Nikhil'>I&apos;m Nikhil</h1>
 				</div>
+
 				<motion.div
 					className='btns'
-					variants={stackContainer}
-					initial={stackContainer.hidden}
-					animate={stackContainer.visible}>
+					variants={container}
+					initial='hidden'
+					animate='visible'>
 					<Link to='/about'>
-						<motion.button
-							variants={stackItem}
-							initial={stackItem.hidden}
-							animate={stackItem.visible}>
+						<motion.button variants={item}>
 							<span>About</span>
 						</motion.button>
 					</Link>
+
 					<Link to='/work'>
-						<motion.button
-							variants={stackItem}
-							initial={stackItem.hidden}
-							animate={stackItem.visible}>
+						<motion.button variants={item}>
 							<span>Work</span>
 						</motion.button>
 					</Link>
+
 					<Link to='/contact'>
-						<motion.button
-							variants={stackItem}
-							initial={stackItem.hidden}
-							animate={stackItem.visible}>
+						<motion.button variants={item}>
 							<span>Contact</span>
 						</motion.button>
 					</Link>

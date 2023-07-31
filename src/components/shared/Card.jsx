@@ -2,15 +2,10 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import AnimationContext from '../../context/AnimationContext' /* eslint-disable react/prop-types */
 function Card({ workItem }) {
-	const { cardItem } = useContext(AnimationContext)
+	const { item } = useContext(AnimationContext)
 
 	return (
-		<motion.div
-			className='work-card'
-			variants={cardItem}
-			initial={cardItem.hidden}
-			animate={cardItem.visible}
-			transition={cardItem.visible.transition}>
+		<motion.div className='work-card' variants={item}>
 			<div
 				style={{
 					display: 'flex',
