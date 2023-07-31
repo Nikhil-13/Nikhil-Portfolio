@@ -42,6 +42,7 @@ body
   line-height: 1.5;
   background-color: var(--background);
   color: var(--text);
+  /* text-wrap: balance */
 }
 
 img,
@@ -62,6 +63,12 @@ h1
 h2
 {
   font-size: clamp(2rem, 2.2rem, 3rem);
+}
+
+p
+{
+  margin: 10px 5px;
+  text-wrap: balance
 }
 
 a,
@@ -143,6 +150,7 @@ section
 {
   width: fit-content;
   padding: 1rem;
+  scale: 1.1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -276,7 +284,7 @@ button span
 .about-content
 {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   /* gap: 2rem; */
   padding: 1rem .5rem;
   /* border: 1px solid red; */
@@ -289,10 +297,10 @@ button span
 .about-content>*
 {
   width: 50%;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.7;
   padding: .5rem;
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 .avatar
@@ -408,6 +416,11 @@ button span
   {
     width: 100%;
     padding: 0;
+  }
+
+  .hero
+  {
+    scale: 1;
   }
 }
 

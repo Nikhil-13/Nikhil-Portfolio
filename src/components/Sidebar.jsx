@@ -16,18 +16,24 @@ function Sidebar() {
 				variants={container}
 				initial='hidden'
 				animate='visible'>
-				<motion.a href='https://github.com/Nikhil-13' target='__blank' variants={item}>
+				<motion.a
+					href='https://github.com/Nikhil-13'
+					target='__blank'
+					variants={item}
+					aria-label='Github'>
 					<Github />
 				</motion.a>
 				<motion.a
 					href='https://stackoverflow.com/users/13827711/nikhil'
 					target='__blank'
-					variants={item}>
+					variants={item}
+					aria-label='StackOverflow'>
 					<StackOverflow />
 				</motion.a>
 				<motion.a
 					href='https://www.linkedin.com/in/nikhil-kumar-51294b11b/'
 					target='__blank'
+					aria-label='Linkedin'
 					variants={item}>
 					<Linkedin />
 				</motion.a>
