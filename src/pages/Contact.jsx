@@ -31,27 +31,30 @@ function Contact() {
 				variants={container}
 				initial='hidden'
 				animate='visible'>
-				<motion.form onSubmit={handleSubmit(onSubmit)} variants={item}>
-					<input
+				<motion.form onSubmit={handleSubmit(onSubmit)}>
+					<motion.input
 						type='text'
 						placeholder='Name'
 						{...register('Name', { required: true, maxLength: 80 })}
 						style={errors.Name && { borderColor: 'red' }}
+						variants={item}
 					/>
-					<input
+					<motion.input
 						type='text'
 						placeholder='Email'
 						{...register('Email', { required: true, pattern: /^\S+@\S+$/i })}
 						style={errors.Email && { borderColor: 'red' }}
+						variants={item}
 					/>
-					<input
+					<motion.input
 						type='text'
 						placeholder='Subject'
 						{...register('Subject', { required: true, maxLength: 30 })}
 						style={errors.Subject && { borderColor: 'red' }}
+						variants={item}
 					/>
 
-					<textarea
+					<motion.textarea
 						placeholder='Write your message here...'
 						{...register('Message', {
 							required: true,
@@ -59,10 +62,12 @@ function Contact() {
 							min: 50,
 							maxLength: 300,
 						})}
+						variants={item}
 					/>
-					<input
+					<motion.input
 						type='submit'
 						disabled={Object.keys(errors).length === 0 ? false : true}
+						variants={item}
 					/>
 				</motion.form>
 			</motion.div>
