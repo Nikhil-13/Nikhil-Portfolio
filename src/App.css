@@ -65,18 +65,13 @@ h2
   font-size: clamp(2rem, 2.2rem, 3rem);
 }
 
-p
-{
-  margin: 10px 5px;
-  text-wrap: balance;
-}
-
 a,
 a:active,
 a:visited
 {
   all: unset;
   scale: 1;
+
 }
 
 .social-links a:hover
@@ -142,7 +137,6 @@ section
   display: block;
   width: 100%;
   margin-inline: auto;
-  /* background-color: rebeccapurple; */
   padding: 1rem 2rem;
 }
 
@@ -299,12 +293,16 @@ button span
   padding: .5rem;
 }
 
+.about-content p
+{
+  margin-top: 10px;
+}
+
 .avatar
 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .avatar img
@@ -390,6 +388,7 @@ button span
     width: 100%;
     line-height: 1.1;
   }
+
 
   .avatar img
   {
