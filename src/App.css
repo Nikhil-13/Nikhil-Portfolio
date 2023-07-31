@@ -69,7 +69,6 @@ p
 {
   margin: 10px 5px;
   text-wrap: balance;
-  text-align: center;
 }
 
 a,
@@ -286,9 +285,7 @@ button span
 {
   display: flex;
   align-items: flex-start;
-  /* gap: 2rem; */
   padding: 1rem .5rem;
-  /* border: 1px solid red; */
   margin-inline: auto;
   margin: 2rem auto;
   width: 80%;
@@ -298,10 +295,8 @@ button span
 .about-content>*
 {
   width: 50%;
-  /* text-align: center; */
   line-height: 1.7;
   padding: .5rem;
-  /* text-wrap: balance; */
 }
 
 .avatar
@@ -393,6 +388,7 @@ button span
   .about-content>*
   {
     width: 100%;
+    line-height: 1.1;
   }
 
   .avatar img
