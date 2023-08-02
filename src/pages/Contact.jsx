@@ -14,7 +14,7 @@ function Contact() {
 		reset,
 		formState: { errors },
 	} = useForm()
-	const onSubmit = async (data) => {
+	const onSubmit = (data) => {
 		console.log(data)
 		notify()
 		reset()
