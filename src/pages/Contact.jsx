@@ -2,21 +2,27 @@ import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import AnimationContext from '../context/AnimationContext'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function Contact() {
 	const { headingAnimation, container, item } = useContext(AnimationContext)
-
+	const notify = () => toast.success('Message Sent')
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors },
 	} = useForm()
-	const onSubmit = (data) => {
+	const onSubmit = async (data) => {
 		console.log(data)
+		notify()
+		reset()
 	}
 
 	return (
 		<section id='contact'>
+			<ToastContainer theme='dark' />
 			<div>
 				<motion.div
 					animate={headingAnimation.animate}
