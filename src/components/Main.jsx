@@ -26,11 +26,11 @@ function Main() {
             </motion.button>
           </Link>
 
-          <Link to='/projects'>
+          {/* <Link to='/projects'>
             <motion.button variants={item}>
               <span>Projects</span>
             </motion.button>
-          </Link>
+          </Link> */}
           <Link to='/work'>
             <motion.button variants={item}>
               <span>Work</span>
