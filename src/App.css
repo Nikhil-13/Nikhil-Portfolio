@@ -286,7 +286,7 @@ button span {
   }
 }
 
-@media (width<=426px) {
+@media (width<=450px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
