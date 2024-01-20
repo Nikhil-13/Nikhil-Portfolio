@@ -11,9 +11,10 @@
 :root {
   --text: #fdfcfc;
   --background: #151415;
-  --primary: #45c13e;
+  --primary: #d86a21;
+  /* --primary: #45c13e; */
   --secondary: #202221;
-  --accent: #3e45c1;
+  --accent: #d86a21;
 }
 
 @media (prefers-color-scheme: light) {
@@ -22,7 +23,7 @@
     --background: #fdfcfc;
     --primary: #45c13e;
     --secondary: #e2e4e3;
-    --accent: #3e45c1;
+    --accent: #d86a21;
   }
 }
 
@@ -66,6 +67,7 @@ a:visited {
   /* --elem-shadow-color: #ffffff6c; */
   filter: drop-shadow(0 0 10px var(--elem-shadow-color));
   color: var(--elem-bg-color);
+  /* filter: hue-rotate(90deg); */
   transition: all 0.3s ease;
 }
 
@@ -100,8 +102,8 @@ aside {
   flex-direction: column;
   padding: 20px 0px;
   -webkit-box-pack: justify;
-  background-color: #3b3b3b;
-  /* background-color: var(--background); */
+  /* background-color: #d86a21; */
+  background-color: var(--accent);
   justify-content: space-between;
 }
 
