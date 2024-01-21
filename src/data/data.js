@@ -7,17 +7,17 @@ export const work = [
     role: 'React Native Intern',
     years: 'Sept-2023 -',
     description: 'The quick brown fox jumps over the lazy dog.',
-    stack: ['React', 'React-Native', 'HTML', 'CSS', 'JS'],
+    stack: ['React', 'React-Native', 'JS', 'HTML', 'CSS'],
   },
   {
-    id: 2,
-    company: 'XYZ',
+    id: 3,
+    company: 'IT-adsf',
     companyUrl: 'http://google.com',
-    location: 'Panchkula,India',
-    role: 'Fullstack Dev',
-    years: '2011-2012',
+    location: 'Chandigarh,India',
+    role: 'React Native Intern',
+    years: 'Sept-2023 -',
     description: 'The quick brown fox jumps over the lazy dog.',
-    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'GraphQL'],
+    stack: ['React', 'React-Native', 'JS', 'HTML', 'CSS'],
   },
 ];
 
@@ -34,7 +34,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'chatApp',
+    title: 'YouTube Clone',
     description: 'One to One realtime chat app',
     images: [
       'https://plus.unsplash.com/premium_photo-1666900440561-94dcb6865554?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

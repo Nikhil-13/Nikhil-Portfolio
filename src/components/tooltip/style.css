@@ -1,5 +1,6 @@
 .item-hints {
   cursor: pointer;
+  /* color: var(--text); */
   /* display: flex; */
   justify-content: flex-start;
   /* padding-right: 170px; */
@@ -25,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text);
   /* animation: pulse 5s infinite; */
 }
 /* .item-hints .hint-radius {
@@ -91,7 +92,7 @@
   left: 0;
   width: 80px;
   content: '';
-  background-color: #fff;
+  background-color: var(--text);
   height: 1.5px;
   position: absolute;
   opacity: 1;
@@ -110,6 +111,7 @@
   margin-left: 56px;
 }
 .tooltip-message {
+  color: var(--text);
   font-size: 1.3rem;
 }
 

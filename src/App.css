@@ -20,8 +20,9 @@
 @media (prefers-color-scheme: light) {
   :root {
     --text: #151415;
-    --background: #fdfcfc;
-    --primary: #45c13e;
+    --background: #e4e0d8;
+    --primary: #d86a21;
+    /* --primary: #45c13e; */
     --secondary: #e2e4e3;
     --accent: #d86a21;
   }
@@ -68,6 +69,11 @@ a:visited {
   filter: drop-shadow(0 0 10px var(--elem-shadow-color));
   color: var(--elem-bg-color);
   /* filter: hue-rotate(90deg); */
+  transition: all 0.3s ease;
+}
+.social-links > a {
+  /* background-color: red; */
+  filter: drop-shadow(0 0 20px var(--background));
   transition: all 0.3s ease;
 }
 
@@ -226,7 +232,7 @@ button span {
 
 .work-card:nth-child(1) {
   scale: 1.01;
-  border-bottom: 5px solid limegreen;
+  border-bottom: 5px solid var(--primary);
 }
 
 .tech-stack {
@@ -322,11 +328,16 @@ button span {
     padding: 5px;
     font-size: 1.5rem;
   }
+  .btns {
+    columns: 2;
+  }
 
   .about-content {
     flex-direction: column-reverse;
     width: 100%;
     padding: 0;
+    height: 100%;
+    padding-bottom: 100px;
   }
 
   .about-content > * {
@@ -335,6 +346,8 @@ button span {
   }
 
   .avatar img {
+    height: 200px;
+    /* max-height: 20%; */
     min-height: 150px;
     width: auto;
   }
@@ -355,6 +368,8 @@ button span {
 
   .hero {
     scale: 1;
+    width: 100%;
+    /* background-color: red; */
   }
 }
 
