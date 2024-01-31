@@ -9,11 +9,11 @@ function Card({ workItem }) {
       <div
         style={{
           display: 'flex',
-          gap: '1rem',
+          gap: '.9rem',
           alignItems: 'baseline',
         }}
       >
-        <h3 className='company-name'>
+        <h3 className='company-name' style={{ fontSize: '1.5rem' }}>
           <a
             href={workItem.companyUrl}
             target='_blank'
@@ -28,13 +28,13 @@ function Card({ workItem }) {
       </div>
       <p
         className='job-role'
-        style={{ fontSize: '1.015rem', fontWeight: 'bold' }}
+        style={{ fontSize: '1.15rem', fontWeight: 'bold' }}
       >
         {workItem.role}
         <span
           className='job-location'
           style={{
-            fontSize: '1.025rem',
+            fontSize: '.9rem',
             opacity: '.8',
             marginLeft: '5px',
             fontWeight: 'normal',

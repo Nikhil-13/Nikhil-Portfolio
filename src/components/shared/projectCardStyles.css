@@ -7,9 +7,39 @@
   display: flex;
 }
 .embla__slide {
-  background-color: red;
   height: 200px;
   width: 100px;
   flex: 0 0 100%;
   /* min-width: 0;  */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: min(50ch, 500px, 56vw);
+  max-width: 400px;
+  background: var(--secondary);
+  margin: 1rem;
+  position: relative;
+  /* padding: 1rem; */
+  z-index: -2;
+}
+
+.project-tech-stack {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5px;
+  flex-wrap: wrap;
+  word-break: no-break;
+}
+
+.project-tech-stack::before {
+  content: '|';
+}
+
+@media (width<=450px) {
+  .project-card {
+    width: 100%;
+  }
 }

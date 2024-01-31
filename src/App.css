@@ -237,6 +237,7 @@ button span {
 
 .tech-stack {
   display: flex;
+  justify-content: space-between;
   gap: 5px;
   flex-wrap: wrap;
   word-break: no-break;
@@ -248,7 +249,7 @@ button span {
 
 .about-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 1rem 0.5rem;
   margin-inline: auto;
   margin: 2rem auto;
@@ -330,6 +331,10 @@ button span {
   }
   .btns {
     columns: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem 0;
   }
 
   .about-content {

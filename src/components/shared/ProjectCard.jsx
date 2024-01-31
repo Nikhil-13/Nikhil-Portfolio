@@ -6,8 +6,7 @@ import './projectCardStyles.css';
 import Autoplay from 'embla-carousel-autoplay';
 
 function ProjectCard({ projectItem }) {
-  console.log(projectItem);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const { item } = useContext(AnimationContext);
   // useEffect(() => {
   //   if (emblaApi) {
@@ -16,7 +15,7 @@ function ProjectCard({ projectItem }) {
   // }, [emblaApi]);
 
   return (
-    <motion.div className='work-card' variants={item}>
+    <motion.div className='project-card' variants={item}>
       <div className='embla' ref={emblaRef}>
         <div className='embla__container'>
           {projectItem?.images.map((item) => (
@@ -24,9 +23,6 @@ function ProjectCard({ projectItem }) {
               <img src={item} />
             </div>
           ))}
-
-          {/* <div className='embla__slide'>Slide 2</div>
-          <div className='embla__slide'>Slide 3</div> */}
         </div>
       </div>
       <div
@@ -36,38 +32,16 @@ function ProjectCard({ projectItem }) {
           alignItems: 'baseline',
         }}
       >
-        <h3 className='company-name'>
-          {/* <a
-            href={projectItem.companyUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-          > */}
-          {projectItem?.title}
-          {/* </a> */}
-        </h3>
-        {/* <span className='wrok-duration' style={{ opacity: '.7' }}>
-          {workItem.years}
-        </span> */}
+        <h3 className='company-name'>{projectItem?.title}</h3>
       </div>
-      {/* <p
-        className='job-role'
-        style={{ fontSize: '1.015rem', fontWeight: 'bold' }}
-      >
-        {workItem.role}
-        <span
-          className='job-location'
-          style={{
-            fontSize: '1.025rem',
-            opacity: '.8',
-            marginLeft: '5px',
-            fontWeight: 'normal',
-          }}
-        >
-          {workItem.location}
-        </span>
-      </p> */}
       <p className='job-description'>{projectItem?.description}.</p>
-      {/* <hr style={{ opacity: '.5' }} /> */}
+      <hr style={{ opacity: '.5' }} />
+      <div className='project-tech-stack'>
+        {projectItem?.stack.map((stackItem) => (
+          // eslint-disable-next-line react/jsx-key
+          <span className='tech-stack-item'>{stackItem} | </span>
+        ))}
+      </div>
     </motion.div>
   );
 }
