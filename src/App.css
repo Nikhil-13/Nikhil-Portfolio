@@ -330,11 +330,13 @@ button span {
     font-size: 1.5rem;
   }
   .btns {
-    columns: 2;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    gap: 2rem;
+  }
+
+  .btns a > button {
     width: 100%;
-    justify-content: space-around;
-    padding: 1rem 0;
   }
 
   .about-content {
