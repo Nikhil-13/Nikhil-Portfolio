@@ -1,18 +1,13 @@
 import { motion } from 'framer-motion';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import AnimationContext from '../../context/AnimationContext'; /* eslint-disable react/prop-types */
 import useEmblaCarousel from 'embla-carousel-react';
 import './projectCardStyles.css';
 import Autoplay from 'embla-carousel-autoplay';
 
 function ProjectCard({ projectItem }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
   const { item } = useContext(AnimationContext);
-  // useEffect(() => {
-  //   if (emblaApi) {
-  //     console.log(emblaApi.slideNodes()); // Access API
-  //   }
-  // }, [emblaApi]);
 
   return (
     <motion.div className='project-card' variants={item}>
@@ -39,7 +34,9 @@ function ProjectCard({ projectItem }) {
       <div className='project-tech-stack'>
         {projectItem?.stack.map((stackItem) => (
           // eslint-disable-next-line react/jsx-key
-          <span className='tech-stack-item'>{stackItem} | </span>
+          <span className='tech-stack-item' key={stackItem}>
+            {stackItem} |{' '}
+          </span>
         ))}
       </div>
     </motion.div>

@@ -3,10 +3,8 @@ import { motion } from 'framer-motion';
 import { useContext } from 'react';
 import AnimationContext from '../context/AnimationContext';
 import ProjectCard from '../components/shared/ProjectCard';
-// import { useEffect } from 'react'
 function Projects() {
   const { headingAnimation, container } = useContext(AnimationContext);
-  console.log(PROJECTS);
 
   return (
     <section id='work'>

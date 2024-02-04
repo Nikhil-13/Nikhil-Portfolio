@@ -66,18 +66,20 @@ a:visited {
 
 .social-links a:hover {
   /* --elem-shadow-color: #ffffff6c; */
-  filter: drop-shadow(0 0 10px var(--elem-shadow-color));
+  /* filter: drop-shadow(0 0 10px var(--elem-shadow-color)); */
+  translate: 0 -5px;
   color: var(--elem-bg-color);
+
   /* filter: hue-rotate(90deg); */
   transition: all 0.3s ease;
 }
 .social-links > a {
   /* background-color: red; */
-  filter: drop-shadow(0 0 20px var(--background));
+  /* filter: drop-shadow(0 0 20px var(--background)); */
   transition: all 0.3s ease;
 }
 
-.social-links a:nth-child(1):hover {
+/* .social-links a:nth-child(1):hover {
   --elem-bg-color: #13ca25fe;
   --elem-shadow-color: #3af38abf;
 }
@@ -90,7 +92,7 @@ a:visited {
 .social-links a:nth-child(3):hover {
   --elem-bg-color: #0051fffe;
   --elem-shadow-color: #547bf9bf;
-}
+} */
 
 .container {
   display: grid;
@@ -303,6 +305,7 @@ button span {
 
   .container > div:nth-child(1) {
     order: 2;
+    z-index: 3;
   }
 
   .container > div:nth-child(2) {
@@ -311,6 +314,7 @@ button span {
 
   section {
     padding: 1rem;
+    width: 100dvw;
   }
 
   aside {
@@ -320,6 +324,7 @@ button span {
     position: fixed;
     bottom: 0;
     padding: 0.5rem 0.7rem;
+    z-index: inherit;
   }
 
   aside > * {
