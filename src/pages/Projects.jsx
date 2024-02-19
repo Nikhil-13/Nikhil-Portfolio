@@ -6,6 +6,18 @@ import ProjectCard from '../components/shared/ProjectCard';
 function Projects() {
   const { headingAnimation, container } = useContext(AnimationContext);
 
+  let type = '';
+
+  const getSubtitle = (item) => {
+    if (type === '') {
+      type = item.type;
+      return <h1>abc</h1>;
+    } else if (type !== item.type) {
+      type = item.type;
+      return <h1>xyz</h1>;
+    }
+  };
+
   return (
     <section id='work'>
       <motion.div
@@ -22,9 +34,10 @@ function Projects() {
         initial='hidden'
         animate='visible'
       >
-        {PROJECTS.map((projectItem) => (
-          <ProjectCard key={projectItem.id} projectItem={projectItem} />
-        ))}
+        {PROJECTS.map((projectItem) => {
+          getSubtitle(projectItem);
+          return <ProjectCard key={projectItem.id} projectItem={projectItem} />;
+        })}
       </motion.div>
     </section>
   );

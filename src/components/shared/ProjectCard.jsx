@@ -20,24 +20,19 @@ function ProjectCard({ projectItem }) {
           ))}
         </div>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          gap: '1rem',
-          alignItems: 'baseline',
-        }}
-      >
+
+      <div className='detail-container'>
         <h3 className='company-name'>{projectItem?.title}</h3>
-      </div>
-      <p className='job-description'>{projectItem?.description}.</p>
-      <hr style={{ opacity: '.5' }} />
-      <div className='project-tech-stack'>
-        {projectItem?.stack.map((stackItem) => (
-          // eslint-disable-next-line react/jsx-key
-          <span className='tech-stack-item' key={stackItem}>
-            {stackItem} |{' '}
-          </span>
-        ))}
+        <p className='job-description'>{projectItem?.description}.</p>
+        <hr style={{ opacity: '.5' }} />
+        <div className='project-tech-stack'>
+          {projectItem?.stack.map((stackItem) => (
+            // eslint-disable-next-line react/jsx-key
+            <span className='tech-stack-item' key={stackItem}>
+              {stackItem} |{' '}
+            </span>
+          ))}
+        </div>
       </div>
     </motion.div>
   );

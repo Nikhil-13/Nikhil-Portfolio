@@ -121,7 +121,15 @@
   } */
   .hint:hover {
   }
+  .item-hints .hint[data-position='4'] .hint-content {
+    opacity: 0;
+  }
+  .item-hints .hint:hover .hint-content::after {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
+
 @keyframes pulse {
   0%,
   100% {
