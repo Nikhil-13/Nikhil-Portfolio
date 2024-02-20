@@ -43,7 +43,7 @@ export const PROJECTS = [
     type: 'web',
     title: 'Feedback',
     description: 'A ',
-    images: ['../assets/images/web/feedback.png'],
+    images: ['../assets/images/web/feedback.webp'],
     stack: ['React', 'React-Native', 'JS'],
   },
   {
@@ -51,7 +51,7 @@ export const PROJECTS = [
     type: 'web',
     title: 'GitHub Finder',
     description: 'A ',
-    images: ['../assets/images/web/github.png'],
+    images: ['../assets/images/web/github.webp'],
     stack: ['React', 'React-Native', 'JS'],
   },
   {
@@ -59,7 +59,7 @@ export const PROJECTS = [
     type: 'web',
     title: 'Starbucks Clone',
     description: 'A ',
-    images: ['../assets/images/web/starbucks.png'],
+    images: ['../assets/images/web/starbucks.webp'],
     stack: ['React', 'React-Native', 'JS'],
   },
   {
@@ -67,7 +67,7 @@ export const PROJECTS = [
     type: 'web',
     title: 'News App',
     description: 'A ',
-    images: ['../assets/images/web/newsApp.png'],
+    images: ['../assets/images/web/newsApp.webp'],
     stack: ['React', 'React-Native', 'JS'],
   },
   {
@@ -75,7 +75,7 @@ export const PROJECTS = [
     type: 'web',
     title: 'Weather App',
     description: 'A ',
-    images: ['../assets/images/web/weatherApp.png'],
+    images: ['../assets/images/web/weatherApp.webp'],
     stack: ['React', 'React-Native', 'JS'],
   },
 ];
