@@ -302,6 +302,9 @@ button span {
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
   }
+  .social-links a:hover {
+    translate: 0 0;
+  }
 
   .container > div:nth-child(1) {
     order: 2;

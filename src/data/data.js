@@ -7,7 +7,7 @@ export const work = [
     role: 'Mobile Developer (Intern)',
     years: '09/2023 - 02/2024',
     description: 'In my internship period i learned ',
-    stack: ['React', 'React-Native', 'JS', 'HTML', 'CSS', 'Bootstrap'],
+    stack: ['React', 'React-Native', 'Firebase', 'Redux', 'Javascript'],
   },
 ];
 
@@ -16,7 +16,7 @@ export const PROJECTS = [
     id: 1,
     type: 'mobile',
     title: 'chatApp',
-    description: `A realtime chat app for both Android and IOS devices that has features like one to one messaging, message forwarding, replying to messages within chats and support for Offline Mode`,
+    description: `WhatsApp inspired React Native realtime chat app,  connected with Firebase's Realtime database. And has support for one-to-one messaging, reply to texts, forward messages, and delete messages even in offline mode.`,
     images: [
       '../assets/images/mobile/chatApp/chatApp-01.webp',
       '../assets/images/mobile/chatApp/chatApp-02.webp',
@@ -24,7 +24,7 @@ export const PROJECTS = [
       '../assets/images/mobile/chatApp/chatApp-04.webp',
       '../assets/images/mobile/chatApp/chatApp-05.webp',
     ],
-    stack: ['React', 'React-Native', 'JS', 'Firebase'],
+    stack: ['React', 'React-Native', 'Javascript', 'Firebase'],
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const PROJECTS = [
       '../assets/images/mobile/youtube/youtube_02.webp',
       '../assets/images/mobile/youtube/youtube_03.webp',
     ],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const PROJECTS = [
     title: 'Feedback',
     description: 'A ',
     images: ['../assets/images/web/feedback.webp'],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const PROJECTS = [
     title: 'GitHub Finder',
     description: 'A ',
     images: ['../assets/images/web/github.webp'],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ export const PROJECTS = [
     title: 'Starbucks Clone',
     description: 'A ',
     images: ['../assets/images/web/starbucks.webp'],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const PROJECTS = [
     title: 'News App',
     description: 'A ',
     images: ['../assets/images/web/newsApp.webp'],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
   {
     id: 7,
@@ -76,6 +76,6 @@ export const PROJECTS = [
     title: 'Weather App',
     description: 'A ',
     images: ['../assets/images/web/weatherApp.webp'],
-    stack: ['React', 'React-Native', 'JS'],
+    stack: ['React', 'React-Native', 'Javascript'],
   },
 ];

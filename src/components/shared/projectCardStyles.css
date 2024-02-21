@@ -19,7 +19,8 @@
   flex-direction: column;
   gap: 0.5rem;
   width: min(50ch, 500px, 56vw);
-  height: 400px;
+  max-width: fit-content;
+  /* height: 400px; */
   max-width: 400px;
   background: var(--secondary);
   margin: 1rem;
@@ -31,13 +32,17 @@
 .project-tech-stack {
   display: flex;
   /* justify-content: space-between; */
-  gap: 5px;
+  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
   word-break: no-break;
 }
 
 .project-tech-stack::before {
-  content: '|';
+  /* content: '|'; */
+}
+.project-tech-stack::before {
+  /* content: '|'; */
 }
 
 .detail-container {
@@ -47,7 +52,7 @@
   row-gap: 0.5rem;
   justify-content: space-between;
   flex-grow: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media (width<=450px) {
