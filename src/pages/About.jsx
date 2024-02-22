@@ -37,8 +37,8 @@ function About() {
             experiences.
           </p>
           <p>
-            I love tackling the ever-changing tech scene and constantly learning
-            new things. Dive into my portfolio to see how I blend creativity
+            Ever-changing tech scene and constantly learning new things is what
+            gives me edge. Dive into my portfolio to see how I blend creativity
             with code, bringing ideas to life in the realm of mobile
             applications!
           </p>

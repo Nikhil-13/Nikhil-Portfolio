@@ -48,7 +48,7 @@ function Card({ workItem }) {
       <div className='tech-stack'>
         {workItem.stack.map((stackItem) => (
           // eslint-disable-next-line react/jsx-key
-          <span className='tech-stack-item'>{stackItem} | </span>
+          <span className='tech-stack-item'>{stackItem}</span>
         ))}
       </div>
     </motion.div>

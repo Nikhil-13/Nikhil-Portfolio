@@ -20,30 +20,29 @@
   gap: 0.5rem;
   width: min(50ch, 500px, 56vw);
   max-width: fit-content;
-  /* height: 400px; */
+  min-height: max-content;
   max-width: 400px;
   background: var(--secondary);
   margin: 1rem;
   position: relative;
-  /* padding: 0.5rem 0.7rem; */
   z-index: -2;
 }
 
 .project-tech-stack {
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 1rem; */
+  gap: 0.25rem;
+  flex-wrap: nowrap;
   word-break: no-break;
 }
 
-.project-tech-stack::before {
-  /* content: '|'; */
-}
-.project-tech-stack::before {
-  /* content: '|'; */
-}
+/* .tech-stack-item:not(:first-child)::before {
+  content: ' | ';
+} */
+/* .tech-stack-item:not(:last-child)::after {
+  content: ' | ';
+} */
 
 .detail-container {
   padding: 0.5rem 0.7rem;

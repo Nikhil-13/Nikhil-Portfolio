@@ -23,13 +23,13 @@ function ProjectCard({ projectItem }) {
 
       <div className='detail-container'>
         <h3 className='company-name'>{projectItem?.title}</h3>
-        <p className='job-description'>{projectItem?.description}.</p>
+        <p className='job-description'>{projectItem?.description}</p>
         <hr style={{ opacity: '.5' }} />
         <div className='project-tech-stack'>
           {projectItem?.stack.map((stackItem) => (
             // eslint-disable-next-line react/jsx-key
             <span className='tech-stack-item' key={stackItem}>
-              {stackItem} |{' '}
+              {stackItem}
             </span>
           ))}
         </div>
