@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     id: 3,
     type: 'web',
-    title: 'Feedback',
+    title: 'Feedback App',
     description: `A feedback taking app side project, designed for practical learning. This application facilitates CRUD operations, leveraging components like React Context for efficient data management. Dive into relam of react, exploring core functionalities and enhancing your skills through hands-on experience.`,
     images: ['../assets/images/web/feedback.webp'],
     stack: ['HTML', 'CSS', 'Javascript', 'React'],
