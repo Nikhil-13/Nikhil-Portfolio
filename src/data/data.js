@@ -6,8 +6,12 @@ export const work = [
     location: 'Chandigarh, India',
     role: 'Mobile Developer (Intern)',
     years: '09/2023 - 02/2024',
-    description: `During my internship, I had the chance to work on many projects and a full-scale dedicated project. I also tried my hand at implementing small features in several other projects. Performed weekly challenges which proficiency, teamwork, and problem-solving skills, laying the groundwork for future contributions in mobile app development
-    `,
+    description: `During my internship, I had the chance to work on many projects, including a full-scale dedicated project. I also
+    tried
+    my hand at implementing small features in several other projects, and I performed weekly challenges which enhanced
+    my
+    proficiency, teamwork, and problem-solving skills. This experience laid the groundwork for future contributions in
+    mobile app development.`,
     stack: ['React', 'React-Native', 'Firebase', 'Redux', 'Javascript'],
   },
 ];

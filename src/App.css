@@ -228,9 +228,12 @@ button span {
   background: var(--secondary);
   margin: 1rem;
   position: relative;
-  text-align: justify;
+  /* text-align: justify; */
   padding: 1rem;
   z-index: -2;
+}
+.job-description {
+  text-align: justify;
 }
 
 .work-card:nth-child(1) {

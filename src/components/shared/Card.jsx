@@ -43,7 +43,7 @@ function Card({ workItem }) {
           {workItem.location}
         </span>
       </p>
-      <p className='job-description'>{workItem.description}.</p>
+      <p className='job-description'>{workItem.description}</p>
       <hr style={{ opacity: '.5' }} />
       <div className='tech-stack'>
         {workItem.stack.map((stackItem) => (
