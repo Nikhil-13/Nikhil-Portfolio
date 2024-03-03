@@ -7,8 +7,17 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    window.addEventListener('keypress', (event) => {
+      event.preventDefault();
+      if (event?.code === 'KeyM' && event?.ctrlKey === true) {
+      }
+    });
+  }, []);
+
   return (
     <div className='container'>
       <div>

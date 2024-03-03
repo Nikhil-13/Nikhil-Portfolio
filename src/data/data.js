@@ -45,6 +45,19 @@ export const PROJECTS = [
   },
   {
     id: 3,
+    type: 'mobile',
+    title: 'Mobility Clone',
+    description: `Embarked on my first React Native project, meticulously cloning a Prosthetic and Orthotic patient care app. This hands-on endeavor allows me to assess and refine both logical and UI aspects, serving as a valuable side project to nurture and elevate my development skills`,
+    images: [
+      '../assets/images/mobile/mobility/mobility01.webp',
+      '../assets/images/mobile/mobility/mobility02.webp',
+      '../assets/images/mobile/mobility/mobility03.webp',
+      '../assets/images/mobile/mobility/mobility04.webp',
+    ],
+    stack: ['React', 'React-Native', 'Javascript', 'Redux'],
+  },
+  {
+    id: 3,
     type: 'web',
     title: 'Feedback App',
     description: `A feedback taking app side project, designed for practical learning. This application facilitates CRUD operations, leveraging components like React Context for efficient data management. Dive into relam of react, exploring core functionalities and enhancing your skills through hands-on experience.`,
