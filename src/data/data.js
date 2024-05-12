@@ -1,6 +1,16 @@
 export const work = [
   {
     id: 1,
+    company: 'Innovative Code Labs',
+    companyUrl: 'http://google.com',
+    location: 'Mohali, India',
+    role: 'Associate Software Developer',
+    years: '03/2024 - Present',
+    description: ``,
+    stack: ['React', 'React-Native', 'Firebase', 'Redux', 'Javascript'],
+  },
+  {
+    id: 2,
     company: 'IT-Waves',
     companyUrl: 'http://google.com',
     location: 'Chandigarh, India',
