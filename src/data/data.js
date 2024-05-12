@@ -4,7 +4,7 @@ export const work = [
     company: 'Innovative Code Labs',
     companyUrl: 'http://google.com',
     location: 'Mohali, India',
-    role: 'Associate Software Developer',
+    role: 'Software Developer',
     years: '03/2024 - Present',
     description: ``,
     stack: ['React', 'React-Native', 'Firebase', 'Redux', 'Javascript'],
